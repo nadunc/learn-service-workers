@@ -1,4 +1,4 @@
-var CACHE_NAME = 'learn-service-workers-cache-v2';
+var CACHE_NAME = 'learn-service-workers-cache-v1';
 var urlsToCache = [
     '',
     'index.html',
