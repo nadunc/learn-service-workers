@@ -15,6 +15,8 @@ self.addEventListener('install', function (event) {
             .then(function (cache) {
                 console.log('Opened cache');
                 return cache.addAll(urlsToCache);
+            }).catch(function (err) {
+                console.error(err)
             })
     );
 });
@@ -29,7 +31,9 @@ self.addEventListener('fetch', function (event) {
                     }
                     return fetch(event.request);
                 }
-            )
+            ).catch(function (err) {
+                console.error(err)
+            })
     );
 });
 
@@ -46,6 +50,8 @@ self.addEventListener('activate', function(event) {
                     }
                 })
             );
+        }).catch(function (err) {
+            console.error(err)
         })
     );
 });
