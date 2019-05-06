@@ -1,11 +1,11 @@
 var CACHE_NAME = 'learn-service-workers-cache-v1';
 var urlsToCache = [
-    '',
-    'index.html',
-    'assets/css/bootstrap.min.css',
-    'assets/js/jquery-3.4.0.min.js',
-    'assets/js/popper.min.js',
-    'assets/js/bootstrap.min.js'
+    'https://nadunc.github.io/learn-service-workers/',
+    'https://nadunc.github.io/learn-service-workers/index.html',
+    'https://nadunc.github.io/learn-service-workers/assets/css/bootstrap.min.css',
+    'https://nadunc.github.io/learn-service-workers/assets/js/jquery-3.4.0.min.js',
+    'https://nadunc.github.io/learn-service-workers/assets/js/popper.min.js',
+    'https://nadunc.github.io/learn-service-workers/assets/js/bootstrap.min.js'
 ];
 
 self.addEventListener('install', function (event) {
